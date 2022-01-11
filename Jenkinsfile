@@ -23,6 +23,7 @@ node{
 		        //  do nothing if there is an exception
 	        }
     }
+	
     stage('Docker deployment'){
         sh 'docker run -d -p 8090:8080 --name tomcattest aruntheboss/myweb:0.0.2' 
     }
